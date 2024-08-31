@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio()
+	{
+					  
+		caracter idade
+		inteiro idade
+
+		escreva ("Digite sua idade: ")
+		leia (idade)
+		
+		se (idade >=18 e idade <=25)
+		{
+			escreva ("Olá, jovem. Acesso liberado. ")
+		}
+		senao
+		{
+			escreva ("Desculpe, este programa é apenas para jovens entre 18 e 25 anos. ")
+		}
+		
+	}
+}

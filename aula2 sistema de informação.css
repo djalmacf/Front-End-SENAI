@@ -1,0 +1,47 @@
+#include <stdio.h> // Inclusão da biblioteca de entrada e saída
+#include <stdbool.h> // Inclusão da biblioteca de teste lógico (booleana)
+
+int main () { // Função principal para iniciar o sistema
+
+    char nome[20]; // Usuário pode digitar até 20 caracteres (char=caractere)
+    int idade, anoDeNascimento; // Pode escrever ano_de_nascimento ou anoDeNascimento, a varíavel sempre começa com uma letra
+    float altura;
+    bool maiorDeIdade;
+    
+    // Solicitação do Nome
+    printf("Digite seu nome: "); // Irá solicitar na tela ao Usuário
+    scanf("%s", nome); // Irá ler a entrada do dado; Tem que escrever a palavra exatamente igual escreveu em cima (no main); %s é pra indicar pro sistema: associe esse dado ao nome
+    
+    // Solicitação do ano de ano de nascimento 
+    printf("Digite seu ano de nascimento: "); // Irá solicitar na tela ao Usuário
+    scanf("%d", &anoDeNascimento); // Irá ler a entrada do dado; vai associar o ano de nascimento a ao %d
+    
+    // Cálculo
+    idade = 2024 - anoDeNascimento;
+    
+    // Verificando a maioridade 
+    if (idade >= 18) {
+        maiorDeIdade = true;
+    } else { // Sempre fechar as chaves
+        maiorDeIdade = false;
+    }
+    
+    // Solicitação da altura // são comentários que apenas o programador vê
+    printf("Digite sua altura, em metros: "); 
+    scanf("%f", &altura);
+    
+    // Apresentação do resultado
+    
+    printf("%s tem %d anos, ", nome, idade);
+    
+     if (maiorDeIdade) {
+        printf ("é maior de idade ");
+    } else {
+        printf ("é menor de idade ");
+    }
+    
+    printf("e mede %.2f de altura.", altura);
+    
+    return 0;
+    
+}

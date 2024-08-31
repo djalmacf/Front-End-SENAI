@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio()
+	{
+					  
+		caracter peso, altura, imc
+		inteiro peso, altura
+
+		escreva ("Digite seu peso: ")
+		leia (peso)
+
+    escreva ("Digite sua altura, em centimetros: ")
+    leia (altura)
+		
+    real div
+      div = peso/(altura*altura/10000)
+    
+		se ( div >=18 e div <=25)
+		{
+			escreva ("IMC bom. ")
+		}
+		senao
+		{
+			escreva ("IMC ruim. ")
+		}
+		
+	}
+}

@@ -1,0 +1,27 @@
+programa 
+
+{
+  funcao inicio() {
+    
+    cadeia nome
+    inteiro idade
+    real salario
+
+    escreva("Digite seu nome: ")
+    leia(nome)
+
+    escreva("Digite sua idade: ")
+    leia(idade)
+
+    escreva("Digite seu salário, em reais: ")
+    leia(salario)
+
+    se (idade >= 18)
+      escreva(nome, ", você é maior de idade")
+    senao
+      escreva(nome, ", você é menor de idade")
+
+    escreva(" e seu salário é: ", salario)
+
+  }
+}
